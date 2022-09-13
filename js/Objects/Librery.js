@@ -10,6 +10,7 @@
     methodAdd(Name, Author, Year, Ivent_num, Price){
         let book = new Book(Name, Author, Year, Ivent_num, Price);
         this.books.set(book);
+        console.log(book);
     }
 
     getName(){
