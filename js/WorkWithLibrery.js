@@ -7,7 +7,11 @@ function addBook() {
     var Year = document.getElementById('Year');
     var Invent_num = document.getElementById('Invent_num');
     var Price = document.getElementById('Price');
+    if(librery == null){
+        alert("Librery non-exist: NullReferenceException");
+    }else{
 
+    }
 
 }
 
