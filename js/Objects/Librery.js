@@ -13,9 +13,11 @@ class Librery{
     }
 
     getName(){
+        console.log(this.Name);
         return this.Name;
     }
     getAddres(){
+        console.log(this.Addres);
         return this.Addres;
     }
 }
