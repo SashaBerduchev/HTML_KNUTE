@@ -24,7 +24,8 @@ function addLibrery() {
     var textLib = document.getElementById('textLib');
     console.log(NameLib.value + ' ' + AddresLib.value);
     librery = new Librery(NameLib.value, AddresLib.value);
-    document.getElementById('textLib').innerHTML = librery.getName();
+    document.getElementById('textLib').value = librery.getName();
+    document.getElementById('adreslib').value = librery.getAddres();
     console.log(librery.getName() + librery.getAddres());
 }
 
