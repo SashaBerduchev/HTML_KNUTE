@@ -21,5 +21,13 @@
         console.log(this.Addres);
         return this.Addres;
     }
+
+    showLibrery(){
+        console.log(this.Name);
+        console.log(this.Addres);
+        for (let elem of this.books){
+            console.log(elem.Name + " "+elem.Author + " "+elem.Year + " "+ elem.price);
+        }
+    }
 }
 

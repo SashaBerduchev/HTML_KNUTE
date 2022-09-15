@@ -2,6 +2,7 @@
 let librery;
 var btnLibAdd = document.getElementById('btnLibAdd');
 var btnBookAdd = document.getElementById('btnBookAdd');
+var btnShowLibrery = document.getElementById('btnShowLibrery');
 function addBook() {
     var Name = document.getElementById('Name');
     var Author = document.getElementById('Author');
@@ -30,3 +31,9 @@ function addLibrery() {
 }
 
 btnLibAdd.addEventListener('click', addLibrery)
+
+function showLibrery() {
+    librery.showLibrery();
+}
+
+btnShowLibrery.addEventListener('click', showLibrery)
