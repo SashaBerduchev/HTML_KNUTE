@@ -25,15 +25,19 @@ function addLibrery() {
     var textLib = document.getElementById('textLib');
     console.log(NameLib.value + ' ' + AddresLib.value);
     librery = new Librery(NameLib.value, AddresLib.value);
-    document.getElementById('textLib').value = librery.getName();
-    document.getElementById('adreslib').value = librery.getAddres();
+    var textLib = document.getElementById('textLib');
+    textLib.textContent = librery.getName().toString();
+    document.getElementById('adreslib').textContent = librery.getAddres();
     console.log(librery.getName() + librery.getAddres());
 }
 
 btnLibAdd.addEventListener('click', addLibrery)
 
 function showLibrery() {
-    librery.showLibrery();
+   books = librery.showLibrery();
+   for (let elem of books){
+       document.getElementById('output').textContent += elem[0].Name + " " + elem[0].Author + " " + elem[0].Year + " " + elem[0].Invent_num + " " + elem[0].price + "\n";
+   }
 }
 
 btnShowLibrery.addEventListener('click', showLibrery)

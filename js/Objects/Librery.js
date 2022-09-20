@@ -4,7 +4,7 @@
     Addres
     constructor(Name, Address) {
         this.Addres = Address;
-        this.Name = name;
+        this.Name = Name;
     }
 
     methodAdd(Name, Author, Year, Ivent_num, Price){
@@ -23,11 +23,7 @@
     }
 
     showLibrery(){
-        console.log(this.Name);
-        console.log(this.Addres);
-        for (let elem of this.books){
-            console.log(elem.Name + " "+elem.Author + " "+elem.Year + " "+ elem.price);
-        }
+        return this.books;
     }
 }
 
